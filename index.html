@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MRAG Widget Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <span class="logo">Acme Travel</span>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#setup">Setup</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">MRAG Chatbot Widget Demo</p>
+                <h1>旅のご相談はチャットボットへ</h1>
+                <p class="lead">
+                    This is a demo website for embedding the MRAG chatbot widget.
+                    The chat button appears at the bottom-right corner once the
+                    embed code below is configured.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="container cards">
+            <article class="card">
+                <h2>国内ツアー</h2>
+                <p>Domestic tours across Japan with local guides.</p>
+            </article>
+            <article class="card">
+                <h2>海外ツアー</h2>
+                <p>Overseas packages to Asia, Europe and beyond.</p>
+            </article>
+            <article class="card">
+                <h2>サポート</h2>
+                <p>Ask the chatbot about bookings, changes and cancellations.</p>
+            </article>
+        </section>
+
+        <section id="setup" class="container setup">
+            <h2>Setup / 設定</h2>
+            <ol>
+                <li>
+                    Admin &rarr; Chatbot Management &rarr; Domain Setting:
+                    register <code>20206205tech.github.io</code>
+                    with type <strong>Normal</strong>.
+                </li>
+                <li>
+                    Put the downloaded <code>mrag-verify-*.txt</code> at the
+                    root of the <code>20206205Tech.github.io</code> repo,
+                    push, wait for the Pages deploy, then click Verify.
+                </li>
+                <li>
+                    Widget list &rarr; Embed code: copy the
+                    <code>&lt;script&gt;</code> into the <em>WIDGET EMBED</em>
+                    block, push again.
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== DOMAIN VERIFY: paste the <iframe> from Domain Setting below ===== -->
+        <div class="verify-slot">
+
+        </div>
+        <!-- ===== /DOMAIN VERIFY ===== -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; Acme Travel (demo)</div>
+    </footer>
+
+    <!-- ===== WIDGET EMBED: paste the <script> from Widget list > Embed code below ===== -->
+    <script
+      src="https://dev-cdn.hdc-flowtech.com/mrag-widget-ui/dev/embed.js"
+      data-tenant-id="PWvav5OXNPsiRpLQB5Lr"
+      data-widget-code="wgt_9492990bcd69f583377fdd9777a4e037"
+      data-bootstrap-key="bk_live_cf19b07217d2a53e6bcc54d6196bf514b78afc8b"
+      async
+    ></script>
+
+    <!-- ===== /WIDGET EMBED ===== -->
+</body>
+</html>

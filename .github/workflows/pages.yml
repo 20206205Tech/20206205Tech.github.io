@@ -26,6 +26,7 @@ jobs:
       - name: Collect static files
         run: |
           mkdir public
+          cp index.html style.css public/
           cp mrag-verify-*.txt .nojekyll public/
           ls -la public
 
